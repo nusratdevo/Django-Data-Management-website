@@ -1,0 +1,42 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+
+static
+__pycache__
+migrations
+manage.py
+requirements.txt
+readmeFile.txt
+note.txt
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+DMS/wsgi.py
+DMS/settings.py
+__pypackages__/
+
+# app
+app/static
+app/context_processors.py
+app/exportviews.py
+app/HodViews.py
+app/LoginCheckMiddleWare
+app/ResultViews.py
+app/pdfviews.py.bak
+app/exportviews.py
+app/forms.py
+app/HodViews.py
+app/models.py
+app/StudentViews.py
+
+#DMS
+DMS/settings.py
+DMS/urls.py
+
+

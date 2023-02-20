@@ -1,0 +1,6 @@
+registration_number,username,first_name,last_name,email,password,gender,parent_mobile_number,address,course_id, session_year_id
+1001,stud1001,John,Doe,stud1001@gmail.com,12345,male,234234325,New York,class ten, 2203,
+1002,stud1002,John,Doe,stud1002@gmail.com,12345,male,234234325,New York,class five,2023,
+1003,stud1003,John,Doe,stud1003@gmail.com,12345,male,234234325,New York,class five,2023,
+1004,stud1004,John,Doe,stud10014@gmail.com,12345,male,234234325,New York,class ten,2023
+

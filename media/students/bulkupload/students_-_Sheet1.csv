@@ -1,0 +1,6 @@
+registration_number, username,first_name,last_name,email,password,gender,phone,adress,course_id
+1001,stud1001,John,Doe,stud1001@gmail.com,12345,male,234234325,New York,math
+1002,stud1002,John,Doe,stud1002@gmail.com,12345,male,234234325,New York,pysics
+1003,stud1003,John,Doe,stud1003@gmail.com,12345,male,234234325,New York,biology
+1004,stud1004,John,Doe,stud1004@gmail.com,12345,male,234234325,New York,math
+

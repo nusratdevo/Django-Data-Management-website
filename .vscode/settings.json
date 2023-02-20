@@ -1,0 +1,11 @@
+{
+	"editor.fontLigatures": true,
+	"editor.fontVariations": true,
+	"workbench.colorCustomizations": {
+	"sideBar.background": "#0c0c0c",
+	"sideBar.foreground": "#fff6fc",
+	"editor.fontVariations":true
+	
+	},
+	"workbench.colorTheme": "Neon Black Silver",
+}

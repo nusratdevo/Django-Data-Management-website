@@ -1,0 +1,69 @@
+{% extends 'hod_template/base_template.html' %}
+{% load widget_tweaks %}
+
+{% block page_title %}
+  Select all the subjects you want to create
+{% endblock page_title %}
+
+{% block main_content %}
+
+{% load static %}
+<section class="content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        {% block fullcard %}
+        <div class="card">
+          {% block content-header %}{% endblock content-header %}
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                <p>You selected <b>{{ count }} students</b> from the previous page.</p>
+
+                <form method="POST">
+                  {% csrf_token %}
+              
+                  {{ form.non_field_errors }}
+              
+                  <div class="form-group row">
+                    {{ form.session.errors }}
+                    <label class="col-2" for="{{ form.session.id_for_label }}">{{ form.session.label_tag}}</label>
+                    <div class="col">{{ form.session | add_class:"form-control" }}</div>
+                  </div>
+              
+                  <div class="form-group row">
+                    {{ form.term.errors }}
+                    <label class="col-2" for="{{ form.term.id_for_label }}">{{ form.term.label_tag}}</label>
+                    <div class="col">{{ form.term | add_class:"form-control" }}</div>
+                  </div>
+                  <div class="form-group row">
+                    {{ form.subjects.errors }}
+                    <label class="col-2" for="{{ form.subjects.id_for_label }}">{{ form.subjects.label_tag}}</label>
+                    <div class="col">{{ form.subjects | add_class:"form-check-input" }}</div>
+                  </div>
+              
+                  <input type="hidden" name="finish" value="True">
+                  <input type="hidden" name="students" value="{{ students }}">
+              
+                  <input type="submit" class="btn btn-success" value="Create">
+                </form>
+              
+              </div>
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- ./card-body -->
+
+        </div>
+        {% endblock fullcard %}
+        <!-- /.card -->
+      </div>
+      <!-- /.col -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!--/. container-fluid -->
+</section>
+<!-- /.content -->
+  
+{% endblock main_content %}

@@ -1,0 +1,93 @@
+{% extends 'hod_template/base_template.html' %}
+
+{% block page_title %}
+  Select Student(s) <span class="small">and then click on proceed</span>
+{% endblock page_title %}
+
+{% load static %}
+{% block main_content %}
+
+<section class="content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        {% block fullcard %}
+        <div class="card">
+          {% block content-header %}{% endblock content-header %}
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                <form method="POST">
+                  {% csrf_token %}
+                <div class="card-header">
+                  <h3 class="card-title">
+                    <input type="submit" class="btn btn-success" value="Proceed >">
+                  </h3>
+              
+                  <div class="card-tools">
+                    <p class="small btn btn-tool">You can also search by name/class by typing in the search box</p>
+                  </div>
+                </div>
+              
+              
+                <table id="studenttable" class="table table-sm table-bordered" data-page-length='100'>
+                  <thead class="thead-light">
+                    <tr>
+                      <th><input type="checkbox" id="selecter"></th>
+                      <th>Name</th>
+                      <th>Current Class</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for student in students %}
+                      <tr>
+                        <td><input type="checkbox" id="{{ student.id }}" name="students" value="{{ student.id}}"></td>
+                        <td>{{student.admin.username}} </td>
+                        <td>{{student.course_id.course_name}}</td>
+                      </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+              
+                <input type="submit" class="btn btn-success mt-2" value="Proceed >">
+              
+              
+              </form>
+              
+              
+              
+              </div>
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- ./card-body -->
+
+        </div>
+        {% endblock fullcard %}
+        <!-- /.card -->
+      </div>
+      <!-- /.col -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!--/. container-fluid -->
+</section>
+<!-- /.content -->
+{% endblock main_content %}
+{% block morejs %}
+<script>
+  $('#studenttable').DataTable({
+    "ordering": false
+  });
+
+  $("#selecter").change(function () {
+    if (this.checked) {
+      $('input[name="students"]').prop('checked', true);
+    }
+    else {
+      $('input[name="students"]').prop('checked', false);
+    }
+  });
+</script>
+
+{% endblock morejs %}
