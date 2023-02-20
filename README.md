@@ -24,7 +24,7 @@ Version 1 completed and hosted
 
 
 <h2>Dashboar Page</h2>
-<img src="https://github.com/nusratdevo/Django-Data-Management-website/blob/main/media/screen1.PNG" width="400" height="300">
+<img src="https://github.com/nusratdevo/Django-Data-Management-website/blob/main/media/screen1.PNG" height="400">
 ---
 
 <h2>Student bulk/single upload</h2>
