@@ -24,23 +24,23 @@ Version 1 completed and hosted
 
 
 <h2>Dashboar Page</h2>
-<img src="https://github.com/nusratdevo/DMS/blob/main/media/screen1.PNG" width="400" height="300">
+<img src="https://github.com/nusratdevo/Django-Data-Management-website/blob/main/media/screen1.PNG" width="400" height="300">
 ---
 
 <h2>Student bulk/single upload</h2>
-<img src="https://github.com/nusratdevo/DMS/blob/main/media/screen2.PNG" width="400" height="300">
+<img src="https://github.com/nusratdevo/Django-Data-Management-website/blob/main/media/screen2.PNG" width="400" height="300">
 ---
 
 <h2>Fees Invoice upload</h2>
-<img src="https://github.com/nusratdevo/DMS/blob/main/media/screen3.PNG" width="400" height="300">
+<img src="https://github.com/nusratdevo/Django-Data-Management-website/blob/main/media/screen3.PNG" width="400" height="300">
 ---
 
 <h2>Result sheet prepared</h2>
-<img src="https://github.com/nusratdevo/DMS/blob/main/media/screen4.PNG" width="400" height="300">
+<img src="https://github.com/nusratdevo/Django-Data-Management-website/blob/main/media/screen4.PNG" width="400" height="300">
 ---
 
 <h2>User wise notification send</h2>
-<img src="https://github.com/nusratdevo/DMS/blob/main/media/screen5.PNG" width="400" height="300">
+<img src="https://github.com/nusratdevo/Django-Data-Management-website/blob/main/media/screen5.PNG" width="400" height="300">
 ---
 
 
